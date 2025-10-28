@@ -1,5 +1,4 @@
 import os
-
 from dotenv import load_dotenv
 from flask import Flask, flash, redirect, render_template, request, url_for
 from flask_mail import Mail, Message
