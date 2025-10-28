@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}Contact | C Todd{% endblock title %}
-
 {% block content %}
-<section class="min-h-screen flex flex-col justify-center items-center text-center space-y-6">  
-  <h1 class="text-3xl font-bold mb-6 text-center">Contact Me</h1>
-  <p class="text-center text-gray-600 mb-8">
+<section class="flex flex-col items-center max-w-3xl mx-auto p-6">
+<div class="max-w-3xl w-full p-6">
+<h1 class="text-3xl font-bold mb-6 text-center">Contact Me</h1>
+<p class="text-center text-gray-600 mb-8">
     Want to work together, have questions, or just want to say hi? Send me a message!
-  </p>
+</p>
 
   {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}

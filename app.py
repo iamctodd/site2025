@@ -1,13 +1,21 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+import os
+
+from dotenv import load_dotenv
+from flask import Flask, flash, redirect, render_template, request, url_for
 from flask_mail import Mail, Message
 
+load_dotenv()
+
 app = Flask(__name__)
+
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.secret_key = 'replace-with-a-secret-key'
 
 projects = [
+        {"title": "Tyche Tools — Product Lead", "description": "Creating tools for data-driven operations in tech and product management.", "link": "#"},
         {"title": "Appcues — VP of Product", "description": "Scaled product and design teams, launched analytics features driving 2x engagement.", "link": "#"},
         {"title": "Vempathy — CEO & Co-founder", "description": "Built AI-driven user research platform acquired by a major UX firm.", "link": "#"},
-        {"title": "Tyche Tools — Founder", "description": "Creating tools for data-driven operations in tech and product management.", "link": "#"},
         {"title": "Product Roadmaps Relaunched — Co-author", "description": "Authored a book on modern product roadmap techniques and frameworks.", "link": "#"}
         ]
     
@@ -18,7 +26,7 @@ app.config.update(
     MAIL_USE_TLS=True,
     MAIL_USERNAME='your_email@example.com',
     MAIL_PASSWORD='your_email_password',
-    MAIL_DEFAULT_SENDER=('C Todd', 'email@example.com')
+    MAIL_DEFAULT_SENDER=('C Todd', 'example@ctodd.com')
     )
 mail = Mail(app)
 
