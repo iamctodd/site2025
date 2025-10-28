@@ -1,0 +1,96 @@
+<!-- Starter Flask + Tailwind Template for ctodd.com -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="C Todd - Product & Design Leader, Educator, Author" />
+    <title>C Todd | Product & Design Leader</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+        <a href="/" class="text-xl font-bold text-gray-900">C Todd</a>
+        <div class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="/about" class="hover:text-blue-600">About</a>
+          <a href="/work" class="hover:text-blue-600">Work</a>
+          <a href="/writing" class="hover:text-blue-600">Writing</a>
+          <a href="/teaching" class="hover:text-blue-600">Teaching</a>
+          <a href="/contact" class="text-blue-600 border border-blue-600 px-3 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="text-center py-20 bg-gradient-to-b from-blue-50 to-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Data Nerd. Design Geek. Product Fanatic.</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+        I help teams connect data, design, and product strategy to build better experiences.
+      </p>
+      <a href="/contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Work with Me</a>
+    </section>
+
+    <!-- About / Work Section -->
+    <section class="max-w-5xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed">
+          I’ve led product and design teams at startups and scale-ups, authored <em>Product Roadmaps Relaunched</em>, and teach courses on data science and product strategy. My work blends creativity with analytics to drive business outcomes.
+        </p>
+        <a href="/about" class="inline-block mt-4 text-blue-600 font-medium hover:underline">Learn more →</a>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Selected Work</h2>
+        <ul class="space-y-4">
+          <li class="border-l-4 border-blue-600 pl-4">
+            <h3 class="font-semibold">Appcues — VP of Product</h3>
+            <p class="text-gray-600 text-sm">Scaled product and design teams, launched analytics features driving 2x engagement.</p>
+          </li>
+          <li class="border-l-4 border-blue-600 pl-4">
+            <h3 class="font-semibold">Vempathy — CEO & Co-founder</h3>
+            <p class="text-gray-600 text-sm">Built AI-driven user research platform acquired by a major UX firm.</p>
+          </li>
+        </ul>
+        <a href="/work" class="inline-block mt-4 text-blue-600 font-medium hover:underline">See full portfolio →</a>
+      </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Latest Writing</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white shadow rounded-xl p-6 text-left">
+            <h3 class="font-semibold text-lg mb-2">Rethinking Product Roadmaps</h3>
+            <p class="text-gray-600 text-sm mb-4">Why traditional roadmaps fail—and how to make yours outcome-focused.</p>
+            <a href="/writing/roadmaps" class="text-blue-600 font-medium hover:underline">Read more →</a>
+          </article>
+          <article class="bg-white shadow rounded-xl p-6 text-left">
+            <h3 class="font-semibold text-lg mb-2">Data-Driven Design Decisions</h3>
+            <p class="text-gray-600 text-sm mb-4">Bridging the gap between intuition and evidence in design practice.</p>
+            <a href="/writing/data-design" class="text-blue-600 font-medium hover:underline">Read more →</a>
+          </article>
+          <article class="bg-white shadow rounded-xl p-6 text-left">
+            <h3 class="font-semibold text-lg mb-2">Teaching Data Science for Business</h3>
+            <p class="text-gray-600 text-sm mb-4">How to make data literacy practical and engaging for non-technical students.</p>
+            <a href="/writing/teaching-data" class="text-blue-600 font-medium hover:underline">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-10 text-center text-sm text-gray-500">
+      <div class="max-w-6xl mx-auto">
+        <p>© 2025 C Todd. All rights reserved.</p>
+        <div class="space-x-4 mt-2">
+          <a href="https://linkedin.com/in/ctodd" class="hover:text-blue-600">LinkedIn</a>
+          <a href="https://twitter.com/ctodd" class="hover:text-blue-600">Twitter</a>
+          <a href="https://github.com/ctodd" class="hover:text-blue-600">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
